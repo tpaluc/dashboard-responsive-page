@@ -1,0 +1,12 @@
+$fw-btn: 500;
+
+.btn {
+    background-color: $bg-light;
+    color: $txt-color-dark;
+    border-radius: 3rem;
+    font-size: $fz-standard;
+    line-height: $lh-more;
+    padding: 12px 20px;
+    font-weight: $fw-btn;
+    border: none;
+}

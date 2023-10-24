@@ -1,0 +1,44 @@
+@media (max-width: $breakpoint-sm) {
+    .navbar {
+        width: 94vw;
+        height: 56px;
+        background-color: $bg-dark;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        margin: 12px;
+        border-radius: $border-radius-xl;
+
+        &__list {
+            display: none;
+        }
+
+        &__link {
+            display: none;
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+
+    .logo {
+
+        &__link {
+            padding-left: 20px;
+        }
+
+        &__img {
+            height: 40px;
+        }
+    }
+
+    .fa-bars {
+        color: $txt-color-light;
+        font-size: $fz-20;
+        padding-right: 20px;
+    }
+
+}
+

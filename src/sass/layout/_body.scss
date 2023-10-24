@@ -1,0 +1,80 @@
+@media (max-width: $breakpoint-sm) {
+
+    .welcome {
+        
+        &-section {
+            max-width: 100vw;
+    }
+        &-container {
+            padding-top: 150px;
+            width: auto;
+            height: auto;
+            background-image: $bg-gradient;
+            border: 4px solid white;
+            border-radius: $border-radius-xl;
+            padding-left: $cnt-left;
+            padding-right: $cnt-right;
+            padding-bottom: 40px;
+        }
+    }
+
+    .welcome__btn--dark {
+        background-color: $bg-dark;
+        color: $txt-color-light;
+    }
+    // ABOUT SECTION
+    .about {
+        &-section {
+            max-width: 100vw;
+            height: auto;
+        }
+
+        &-container {
+            background-color: $bg-dark;
+            border: 4px solid white;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    .about-boxes {
+        display: flex;
+        padding-bottom: 40px;
+    }
+
+    .about-box {
+        height: 400px;
+        width: 100%;
+        background-color: $bg-light;
+        border-radius: $border-radius-xl;
+
+        
+        &__symbol {
+            color: $txt-color-light;
+            background-color: $link-color;
+            font-size: $fz-standard;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        &__tittle {
+
+        }
+        &__text {
+
+        }
+    }
+
+    
+}
+
+
+.examples-section,
+.getstarted-section,
+.journey-section,
+.pricing-section,
+.faq-section,
+.footer {
+    display: none;
+}

@@ -1,0 +1,31 @@
+$h1-576px: 2.7rem;
+
+@media (max-width: $breakpoint-sm) {
+    .heading {
+
+        &__primary {
+            font-size: $h1-576px;
+            color: $txt-color-light;
+            line-height: $lh-h1;
+            font-weight: $fw-bold;
+            margin-bottom: 20px;
+        }
+
+        &__minor {
+            font-size: $fz-18;
+            color: $txt-color-light;
+            line-height: $lh-more;
+            font-weight: $fw-standard;
+            margin-bottom: 40px;
+            max-width: 95vw;
+        }
+
+        &__color {
+            font-size: $fz-standard;
+            color: $link-color;
+            line-height: $lh-standard;
+            font-weight: $fw-bold;
+            text-transform: uppercase;
+        }
+    }
+}

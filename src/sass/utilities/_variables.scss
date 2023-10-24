@@ -1,0 +1,48 @@
+// bg colors
+$bg-gradient: linear-gradient(to right bottom, rgb(92, 96, 245), rgb(137, 87, 255), rgb(255, 187, 0));
+$bg-dark: #0F172A;
+$bg-light: #F8FAFC;
+$bg-white: #fff;
+// colors
+$txt-color-dark: #0F172A;
+$txt-color-light: #fff;
+$link-color: #8957ff;
+$link-color-hover: #744ad9;
+$txt-green: #00CC88;
+$txt-orange: #FF8C00;
+
+// font family
+$ff-body: 'Satoshi', sans-serif;
+// font sizes
+$fz-standard: 1rem;
+$fz-h1: 4rem;
+$fz-h2: 2.25rem;
+$fz-14: .875rem;
+$fz-18: 1.125rem;
+$fz-20: 1.25rem;
+
+// line heights
+$lh-standard:1.625rem;
+$lh-more: 1.825rem;
+$lh-h1: 3.5rem;
+
+// font weights
+$fw-standard: 400;
+$fw-bold: 700;
+//breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-ld: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// border radius
+$border-radius: .375rem;
+$border-radius-sm: .25rem;
+$border-radius-lg: .5rem;
+$border-radius-xl: .75rem;
+
+// container padding
+$cnt-left: 12px;
+$cnt-right: 12px;
+
+
