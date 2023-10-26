@@ -1,12 +1,18 @@
 $fw-btn: 500;
+$border-radius-btn: 3rem;
+$padding-btn: 12px 20px;
 
 .btn {
     background-color: $bg-light;
     color: $txt-color-dark;
-    border-radius: 3rem;
+    border-radius: $border-radius-btn;
     font-size: $fz-standard;
     line-height: $lh-more;
-    padding: 12px 20px;
+    padding: $padding-btn;
     font-weight: $fw-btn;
     border: none;
+
+    &--getstarted {
+        border-radius: $border-radius-lg;
+    }
 }

@@ -1,12 +1,14 @@
-$h1-576px: 2.7rem;
+$header-1-font-size: 2.7rem;
+$header-responsive-font-size: clamp(1.5625rem, 1.0625rem + 2.5vw, 3rem);
+$header-responsive-line-height: clamp(2.1875rem, 1.6005rem + 2.9348vw, 3.875rem);
 
-@media (max-width: $breakpoint-sm) {
+
     .heading {
 
         &__primary {
-            font-size: $h1-576px;
+            font-size: $header-1-font-size;
             color: $txt-color-light;
-            line-height: $lh-h1;
+            line-height: $h1-lh;
             font-weight: $fw-bold;
             margin-bottom: 20px;
         }
@@ -28,4 +30,5 @@ $h1-576px: 2.7rem;
             text-transform: uppercase;
         }
     }
-}
+
+    
