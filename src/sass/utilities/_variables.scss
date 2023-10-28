@@ -10,6 +10,7 @@ $bg-light-purple: #E2D8FB;
 $bg-orange: #FF8C00;
 $bg-light-orange: #FEE7CC;
 $bg-gray: #91A0B5;
+$bg-green: #00CC88;
 // colors
 $txt-light-dark: #94A3B8;
 $txt-color-dark: #0F172A;
@@ -21,7 +22,7 @@ $txt-green: #00CC88;
 $txt-orange: #FF8C00;
 $txt-light-orange: #FEE7CC;
 $txt-gray: #91A0B5;
-
+$txt-purple: #8957ff;
 // font family
 $ff-body: 'Satoshi', sans-serif;
 // font sizes
@@ -31,37 +32,42 @@ $fz-h2: 2.25rem;
 $fz-14: .875rem;
 $fz-18: 1.125rem;
 $fz-20: 1.25rem;
-
 // line heights
 $lh-standard: 1.625rem;
 $lh-more: 1.825rem;
-
-
 // font weights
 $fw-standard: 400;
+$fw-semi-bold: 600;
 $fw-bold: 700;
 //breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-ld: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-
 // border radius
-$border-radius: .375rem;
-$border-radius-sm: .25rem;
-$border-radius-lg: .5rem;
-$border-radius-xl: .75rem;
-
-// container padding
-$cnt-left: 12px;
-$cnt-right: 12px;
-$cnt-top: 150px;
-$cnt-bottom: 40px;
-// container border
-$cnt-border: 4px solid white;
-// section 
-$sct-max-wdth: 100vw;
-
-// HEADER
-$h1-lh: 3.5rem;
+$border-radius: .25rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: .75rem;
+$border-radius-xl: 1rem;
+// icons
+$icon-padding: 15px;
+$icon-font-size: 16px;
+$icon-font-weight: normal;
+$icon-border-radius: 50%;
+$icon-margin-bottom: 15px;
+// header
+$header-1-font-size: 2.7rem;
+$header-responsive-font-size: clamp(1.5625rem, 1.0625rem + 2.5vw, 3rem);
+$header-responsive-line-height: clamp(2.1875rem, 1.6005rem + 2.9348vw, 3.875rem);
+$header-margin-bottom: 40px;
+$header-lh: 60px;
+$header-second-font-size: 26px;
+// btn
+$fw-btn: 500;
+$border-radius-btn: 3rem;
+$padding-btn: 12px 20px;
+// box
+$box-margin-bottom: 20px;
+$box-padding: 28px;
+$box-margin-top: 15px;
 

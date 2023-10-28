@@ -1,33 +1,78 @@
-$header-1-font-size: 2.7rem;
-$header-responsive-font-size: clamp(1.5625rem, 1.0625rem + 2.5vw, 3rem);
-$header-responsive-line-height: clamp(2.1875rem, 1.6005rem + 2.9348vw, 3.875rem);
-
-
     .heading {
-
         &__primary {
             font-size: $header-1-font-size;
             color: $txt-color-light;
-            line-height: $h1-lh;
+            line-height: $header-lh;
             font-weight: $fw-bold;
-            margin-bottom: 20px;
-        }
+            margin-bottom: $header-margin-bottom;
 
+            &--examples {
+                color: $txt-color-dark;
+            }
+            &--build {
+                color: $txt-color-dark;
+                font-size: $header-second-font-size;
+                margin-bottom: 0;
+            }
+            &--journey {
+                color: $txt-color-dark;
+            }
+            &--pricing {
+                color: $txt-color-dark;
+            }
+            &--faq {
+                color: $txt-color-dark;
+            }
+        }
         &__minor {
             font-size: $fz-18;
             color: $txt-color-light;
             line-height: $lh-more;
             font-weight: $fw-standard;
-            margin-bottom: 40px;
-            max-width: 95vw;
-        }
+            margin-bottom: $header-margin-bottom;
 
+            &--about {
+                color: $txt-gray;
+            }
+            &--build {
+                color: $txt-color-dark;
+                font-size: $fz-standard;
+            }
+            &--pricing {
+                color: $txt-color-dark;
+            }
+            &--faq {
+                color: $txt-color-dark;
+            }
+        }
         &__color {
             font-size: $fz-standard;
             color: $link-color;
             line-height: $lh-standard;
             font-weight: $fw-bold;
             text-transform: uppercase;
+            margin-bottom: $header-margin-bottom;
+
+            &--build {
+                margin-bottom: 0;
+            }
+
+            &--customization {
+                color: $txt-orange;
+                margin-bottom: 0ds;
+            }
+        }
+        &__link {
+            text-decoration: none;
+            color: $link-color;
+            cursor: pointer;
+        }
+        &__link:hover {
+            color: $link-color-hover;
+        }
+
+        &--pricing {
+            text-align: center;
         }
     }
 
