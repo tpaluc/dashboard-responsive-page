@@ -1,0 +1,36 @@
+.icon {
+    background-color: $bg-purple;
+    color: $txt-color-light;
+    font-size: $icon-font-size;
+    padding: $icon-padding;
+    border-radius: $icon-border-radius;
+    margin-bottom: $icon-margin-bottom;
+}
+
+.fa-circle-check,
+.fa-check {
+    $check-right-padding: 10px;
+    background-color: $bg-light;
+    color: $txt-green;
+    padding: 0 $check-right-padding 0 0;
+}
+
+.fa-check {
+    $check-bg-purple-light: #E5DBFD;
+    $check-bg-orange-light: #FFE8CC;
+    $check-bg-dark-light: #94A3B8;
+    $check-padding: 5px;
+
+    color: $txt-purple;
+    background-color: $check-bg-purple-light;
+    padding: $check-padding;
+
+    &--multisite {
+        color: $txt-orange;
+        background-color: $check-bg-orange-light;
+    }
+    &--extended {
+        color: $txt-color-dark;
+        background-color: $check-bg-dark-light;
+    }
+}

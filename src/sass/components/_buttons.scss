@@ -1,7 +1,3 @@
-$fw-btn: 500;
-$border-radius-btn: 3rem;
-$padding-btn: 12px 20px;
-
 .btn {
     background-color: $bg-light;
     color: $txt-color-dark;
@@ -9,8 +5,13 @@ $padding-btn: 12px 20px;
     font-size: $fz-standard;
     line-height: $lh-more;
     padding: $padding-btn;
-    font-weight: $fw-btn;
+    font-weight: $fw-bold;
     border: none;
+
+    &__dark {
+        background-color: $bg-dark;
+        color: $txt-color-light;
+    }
 
     &--getstarted {
         border-radius: $border-radius-lg;

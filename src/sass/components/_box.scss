@@ -1,0 +1,90 @@
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: $bg-light;
+    color: $txt-color-dark;
+    margin-bottom: $box-margin-bottom;
+    padding: $box-padding;
+    border-radius: $border-radius-lg;
+
+    &__tittle {
+        font-size: $fz-18;
+        font-weight: $fw-bold;
+        margin-bottom: $box-margin-bottom;
+        margin-top: $box-margin-top;
+    }
+    &__text {
+        line-height: $lh-more;
+        color: $txt-gray;
+    }
+
+    &--journey {
+        $journey-border-color: #e2e2e2;
+        $journey-border: 0.5px solid $journey-border-color;
+        border: $journey-border;
+        background-color: $bg-white;
+    }
+
+    &--pricing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &-standard {
+            background-color: $bg-purple;
+            color: $txt-color-light;
+        }
+        &-multi {
+            background-color: $bg-orange;
+        }
+        &-extended {
+            background-color: $bg-dark;
+            color: $txt-color-light;
+        }
+    }
+    &__type {
+        font-size: $fz-20;
+        font-weight: $fw-bold;
+        margin-bottom: $box-margin-bottom;
+    }
+    &__price {
+        font-size: $fz-h2;
+        font-weight: $fw-bold;
+        margin-bottom: $box-margin-bottom;
+    }
+    &__for {
+        margin-bottom: $box-margin-bottom;
+    }
+    &__btn {
+        $btn-pricing-padding: 5px 12px;
+
+        background-color: $bg-dark;
+        color: $txt-color-light;
+        border-radius: $border-radius-sm;
+        font-size: $fz-standard;
+        padding: $btn-pricing-padding;
+
+        &--extended {
+            border-radius: $border-radius-lg;
+            background-color: $bg-light;
+            color: $txt-color-dark;
+        }
+    }
+    &__action {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__question {
+        font-weight: $fw-bold;
+        margin-bottom: $box-margin-bottom;
+    }
+    &__answer {
+        font-size: $fz-14;
+    }
+}

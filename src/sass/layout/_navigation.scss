@@ -1,13 +1,17 @@
     .navbar {
-        width: 94vw;
-        height: 56px;
+        $navbar-height: 56px;
+        $navbar-margin: 12px;
+
+        height: $navbar-height;
         background-color: $bg-dark;
+        margin: $navbar-margin;
+        border-radius: $border-radius-xl;
         display: flex;
         justify-content: space-between; 
         align-items: center;
         position: absolute;
-        margin: 12px;
-        border-radius: $border-radius-xl;
+        left: 0;
+        right: 0;
 
         &__list {
             display: none;
@@ -23,20 +27,24 @@
     }
 
     .logo {
+        $logo-height: 40px;
+        $logo-padding-left: 20px;
 
         &__link {
-            padding-left: 20px;
+            padding-left: $logo-padding-left;
         }
 
         &__img {
-            height: 40px;
+            height: $logo-height;
         }
     }
 
     .fa-bars {
+        $burger-padding-right: 20px;
+
         color: $txt-color-light;
         font-size: $fz-20;
-        padding-right: 20px;
+        padding-right: $burger-padding-right;
     }
 
 
