@@ -1,13 +1,56 @@
+// WELCOME SECTION
+.welcome {
+    &__buttons {
+        @media (min-width:$breakpoint-lg) {
+            align-self: flex-end;
+        }
+    }
+    &__img {
+        display: none;
+        @media (min-width: $breakpoint-lg) {
+        display: block;
+        max-width: 90vw;
+        position: relative;
+        bottom: 0;
+        }
+    }
+}
 // EXAMPLES SECTION
 .examples {
+    $container-img-padding: 30px 0 0 30px;
+    $container-img-margin: 30px 0 80px 0;
+    $examples-container-breakpoint-lg-widht: 44vw;
+
+    &__container {
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &--customization {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    &__speed {
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            flex-direction: column;
+            max-width: $examples-container-breakpoint-lg-widht;
+        }
+    }
+    &__customization {
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            flex-direction: column;
+            max-width: $examples-container-breakpoint-lg-widht;
+        }
+    }
+
     &__element {
         font-weight: $fw-bold;
         line-height: $lh-more;
     }
     &__container--img {
-        $container-img-padding: 30px 0 0 30px;
-        $container-img-margin: 30px 0 80px 0;
-
         background-color: $bg-purple;
         max-width: $section-max-width;
         padding: $container-img-padding;
@@ -15,6 +58,9 @@
         margin: $container-img-margin;
         height: auto;
         display: flex;
+        @media (min-width: $breakpoint-lg) {
+            width: $examples-container-breakpoint-lg-widht;
+        }
 
         &-orange {
             background-color: $bg-orange;
@@ -28,6 +74,7 @@
 }
 // JOURNEY SECTION
 .journey {
+    $numbers-padding-right: 80px;
     &__text {
         color: $txt-gray;
         font-size: $fz-20;
@@ -39,8 +86,15 @@
         margin-top: $box-margin-top;
         }
     }
+    &__number-box {
+        @media (min-width: $breakpoint-sm) {
+            display: flex;
+        }
+    }
     &__numbers {
         margin-bottom: $box-margin-bottom;
+        padding-right: $numbers-padding-right;
+
     }
     &__point {
         display: flex;
@@ -57,5 +111,13 @@
         &-text {
             margin-bottom: $box-margin-bottom;
         }
+    }
+}
+// PRICING SECTION 
+.pricing {
+    @media (min-width: $breakpoint-sm) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }

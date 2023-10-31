@@ -2,6 +2,8 @@
     $container-width: 100%;
     $container-border: 4px solid white;
     $container-padding: 100px 12px 40px 12px;
+    $container-padding-breakpoint-sm: 100px 13vw 40px 13vw;
+    $container-padding-breakpoint-md: 100px 5vw 40px 5vw;
 
     max-width: $container-width;
     border: $container-border;
@@ -12,6 +14,17 @@
     &--welcome {
         background-image: $bg-gradient;
         color: $txt-color-light;
+        @media (min-width: $breakpoint-sm) {
+            padding: $container-padding-breakpoint-sm;
+        }
+        @media (min-width: $breakpoint-md) {
+            padding: $container-padding-breakpoint-md;
+        }
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0;
+        }
     }
     &--about {
         background-color: $bg-dark;
@@ -27,5 +40,10 @@
     }
     &--faq {
         background-color: $bg-light;
+    }
+    &--journey-heading {
+        @media (min-width: $breakpoint-lg) {
+        display: flex;
+        }
     }
 }

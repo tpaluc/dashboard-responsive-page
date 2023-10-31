@@ -1,4 +1,14 @@
     .heading {
+        $examples-breakpoint-md-width: 50vw;
+        $welcome-breakpoint-lg-width: 60vw;
+
+        
+        &--welcome {
+            @media (min-width: $breakpoint-lg) {
+                max-width: $welcome-breakpoint-lg-width;
+            }
+        }
+
         &__primary {
             font-size: $header-1-font-size;
             color: $txt-color-light;
@@ -8,6 +18,9 @@
 
             &--examples {
                 color: $txt-color-dark;
+                @media (min-width: $breakpoint-md) {
+                    max-width: $examples-breakpoint-md-width;
+                }
             }
             &--build {
                 color: $txt-color-dark;
