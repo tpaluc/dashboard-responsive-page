@@ -1,5 +1,6 @@
 // WELCOME SECTION
 .welcome {
+    $img-max-width: 90vw;
     &__buttons {
         @media (min-width:$breakpoint-lg) {
             align-self: flex-end;
@@ -9,7 +10,7 @@
         display: none;
         @media (min-width: $breakpoint-lg) {
         display: block;
-        max-width: 90vw;
+        max-width: $img-max-width;
         position: relative;
         bottom: 0;
         }
@@ -86,7 +87,7 @@
         margin-top: $box-margin-top;
         }
     }
-    &__number-box {
+    &__number {
         @media (min-width: $breakpoint-sm) {
             display: flex;
         }
@@ -119,5 +120,5 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
+    } 
 }

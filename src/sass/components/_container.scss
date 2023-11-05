@@ -41,7 +41,7 @@
     &--faq {
         background-color: $bg-light;
     }
-    &--journey-heading {
+    &__journey {
         @media (min-width: $breakpoint-lg) {
         display: flex;
         }
