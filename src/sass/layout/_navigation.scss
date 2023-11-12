@@ -1,6 +1,8 @@
     .navbar {
         $navbar-height: 56px;
         $navbar-margin: 12px;
+        $navbar-breakpoint-lg-margin: 12px 100px;
+        $navbar-breakpoint-lg-border-radius: 3rem;
 
         height: $navbar-height;
         background-color: $bg-dark;
@@ -12,26 +14,52 @@
         position: absolute;
         left: 0;
         right: 0;
+        @media (min-width: $breakpoint-lg) {
+            border-radius: $navbar-breakpoint-lg-border-radius;
+            margin: $navbar-breakpoint-lg-margin;
+        }
+
 
         &__list {
             display: none;
+            @media (min-width: $breakpoint-lg) {
+                display: flex;
+            }
         }
 
         &__link {
             display: none;
+            text-decoration: none;
+            color: $txt-color-light;
+            padding-right: 40px;
+            @media (min-width: $breakpoint-lg) {
+                display: flex;
+            }
         }
 
         &__btn {
             display: none;
+            @media (min-width: $breakpoint-lg) {
+                display: flex;
+            }
         }
     }
 
     .logo {
         $logo-height: 40px;
         $logo-padding-left: 20px;
+        $logo-padding-left-breakpoint-sm: 10vw;
+        $logo-padding-left-breakpoint-lg: 10px;
+
 
         &__link {
             padding-left: $logo-padding-left;
+            @media (min-width: $breakpoint-sm) {
+                padding-left: $logo-padding-left-breakpoint-sm;
+            }
+            @media (min-width: $breakpoint-lg) {
+                padding-left: $logo-padding-left-breakpoint-lg;
+            }
         }
 
         &__img {
@@ -41,10 +69,17 @@
 
     .fa-bars {
         $burger-padding-right: 20px;
+        $burger-padding-right-breakpoint-sm: 10vw;
 
         color: $txt-color-light;
         font-size: $fz-20;
         padding-right: $burger-padding-right;
+        @media (min-width: $breakpoint-sm) {
+            padding-right: $burger-padding-right-breakpoint-sm;
+        }
+        @media (min-width: $breakpoint-lg) {
+            display: none;
+        }
     }
 
 
